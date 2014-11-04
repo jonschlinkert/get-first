@@ -15,6 +15,11 @@ npm i get-first --save-dev
 npm test
 ```
 
+## Related
+
+ - [get-value](https://github.com/jonschlinkert/get-value)
+ - [set-value](https://github.com/jonschlinkert/set-value)
+
 ## Usage
 
 ```js
