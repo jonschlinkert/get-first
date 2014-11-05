@@ -25,28 +25,28 @@ npm test
 ```js
 var getFirst = require('get-first');
 
-get({a: 'b'}, 'a');
+getFirst({a: 'b'}, 'a');
 //=> 'b'
 
-get({a: 'b'}, ['a']);
+getFirst({a: 'b'}, ['a']);
 //=> 'b'
 
-get({a: {b: 'c'}}, 'a.b');
+getFirst({a: {b: 'c'}}, 'a.b');
 //=> 'c'
 
-get({a: {b: 'c'}}, ['a.b']);
+getFirst({a: {b: 'c'}}, ['a.b']);
 //=> 'c'
 
-get({a: {b: 'c'}, x: {b: 'd'}}, ['a.b', 'x.b']);
+getFirst({a: {b: 'c'}, x: {b: 'd'}}, ['a.b', 'x.b']);
 //=> 'c'
 
-get({a: {b: 'c'}, x: {b: 'd'}}, ['x.b', 'a.b']);
+getFirst({a: {b: 'c'}, x: {b: 'd'}}, ['x.b', 'a.b']);
 //=> 'd'
 
-get({a: {b: {c: 'd'}}}, ['a.b', 'x.y.z']);
+getFirst({a: {b: {c: 'd'}}}, ['a.b', 'x.y.z']);
 //=> {c: 'd'}
 
-get({a: {b: {c: 'd'}, e: 'f'}}, ['a.c', 'a.e']);
+getFirst({a: {b: {c: 'd'}, e: 'f'}}, ['a.c', 'a.e']);
 //=> 'f'
 ```
 
@@ -56,12 +56,12 @@ Pull requests and stars are always welcome. For bugs and feature requests, [plea
 ## Author
 
 **Jon Schlinkert**
- 
+
 + [github/jonschlinkert](https://github.com/jonschlinkert)
-+ [twitter/jonschlinkert](http://twitter.com/jonschlinkert) 
++ [twitter/jonschlinkert](http://twitter.com/jonschlinkert)
 
 ## License
-Copyright (c) 2014 Jon Schlinkert, contributors.  
+Copyright (c) 2014 Jon Schlinkert, contributors.
 Released under the MIT license
 
 ***
