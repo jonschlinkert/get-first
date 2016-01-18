@@ -1,6 +1,5 @@
 'use strict';
 
-var isObject = require('isobject');
 var get = require('get-value');
 
 module.exports = function getFirst(o, paths) {
