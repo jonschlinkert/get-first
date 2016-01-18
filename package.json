@@ -1,7 +1,7 @@
 {
   "name": "get-first",
   "description": "Pass an array of object paths (e.g. `a.b.c`) and get the first non-undefined value if the property exists, or null if it does not.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/jonschlinkert/get-first",
   "author": {
     "name": "Jon Schlinkert",
